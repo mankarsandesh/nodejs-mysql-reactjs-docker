@@ -1,6 +1,25 @@
-# REACT-NODEJS-MYSQL-DOCKER 
+# ACCOUNT FLOW
+-----------------------
+A second-level headings
 
-Tutorial
----------
+### How to run Nodejs Mysql react js docker Web Application locally
 
-[Docker compose : NodeJS and MySQL app with React in a docker](http://www.bogotobogo.com/DevOps/Docker/Docker-React-Node-MySQL-App.php) 
+```
+Git clone https://github.com/mankarsandesh/nodejs-mysql-reactjs-docker
+cd server 
+npm install
+```
+### Docker setup
+This will skip both images for mysql and phpmyadmin, and will build the images for client and server.
+```
+docker-compose build   
+```
+Now that the images are ready, run **docker-compose up -d** to start the four images in detached mode:
+``` 
+docker-compose up -d   
+```
+To check which containers are running:
+
+```
+docker ps
+```
